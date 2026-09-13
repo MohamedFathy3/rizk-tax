@@ -41,11 +41,7 @@ export default function Navbar() {
     <header className={`site-header ${scrolled ? "site-header-scrolled" : ""}`}>
       <div className="container nav-inner">
         <Link href="/" className="brand" aria-label={`${company.nameAr} - الرئيسية`}>
-          <BrandMark />
-          <span className="brand-copy">
-            <strong>{company.nameAr}</strong>
-            <small>RIZK TAX</small>
-          </span>
+          <img className="header-logo" src="/manus-storage/rizk-tax-logo_3f4c5cf1.png" alt="شعار رزق تاكس" />
         </Link>
 
         <nav className="desktop-nav" aria-label="التنقل الرئيسي">

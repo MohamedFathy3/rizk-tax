@@ -1,16 +1,16 @@
 export const company = {
   name: "Rizk Tax",
   nameAr: "رزق تاكس",
-  phone: "",
-  whatsapp: "",
-  email: "",
-  address: "",
+  phone: "01011200087 / 01223555836",
+  whatsapp: "01011200087",
+  email: "M.Sa3ed.Rizk@gmail.com",
+  address: "4 ابن خلدون سكوير - العجوزة - الجيزة",
   facebook: "",
   instagram: "",
   linkedin: "",
   googleMaps: "",
   description:
-    "حلول ضريبية ومحاسبية تساعد أصحاب الأعمال والمنشآت على إدارة احتياجاتهم بثقة ووضوح.",
+    "محاسبون قانونيون وخبراء ضرائب نقدم حلولًا محاسبية وضريبية دقيقة لأصحاب الأعمال والمنشآت.",
 };
 
 export const navigation = [

@@ -1,169 +1,48 @@
-import {
-  ArrowLeft,
-  ArrowUpLeft,
-  BarChart3,
-  Calculator,
-  Check,
-  CheckCircle2,
-  ClipboardCheck,
-  FileCheck2,
-  Headphones,
-  LineChart,
-  MessageCircle,
-  SearchCheck,
-  ShieldCheck,
-  Sparkles,
-  Target,
-} from "lucide-react";
+import { ArrowLeft, ArrowUpLeft, BarChart3, Calculator, CheckCircle2, ClipboardCheck, FileCheck2, Headphones, LineChart, MessageCircle, SearchCheck, ShieldCheck, Target } from "lucide-react";
 import { Link } from "wouter";
 import { company } from "@/config/company";
 
 const services = [
-  { title: "الاستشارات الضريبية", text: "نساعدك على فهم التزاماتك الضريبية واتخاذ قرارات مناسبة لطبيعة نشاطك.", icon: Calculator, number: "01" },
-  { title: "الإقرارات الضريبية", text: "إعداد ومراجعة الإقرارات الضريبية بعناية وفق المتطلبات المعمول بها.", icon: FileCheck2, number: "02" },
-  { title: "المحاسبة", text: "تنظيم ومتابعة العمليات المحاسبية لتتوفر أمامك صورة أوضح عن أعمالك.", icon: BarChart3, number: "03" },
-  { title: "التسجيل والخدمات الضريبية", text: "مساعدة المنشآت وأصحاب الأعمال في الإجراءات المرتبطة بالمنظومة الضريبية.", icon: ClipboardCheck, number: "04" },
-  { title: "المراجعة والفحص", text: "مراجعة البيانات والمستندات واكتشاف الملاحظات المحتملة قبل أن تكبر.", icon: SearchCheck, number: "05" },
-  { title: "الدعم والاستشارات المستمرة", text: "متابعة قريبة للإجابة عن استفساراتك ومساعدتك في التعامل مع المستجدات.", icon: Headphones, number: "06" },
-];
-
-const benefits = [
-  { title: "خبرة واحترافية", text: "نتعامل مع التفاصيل المالية والضريبية بمنهجية واضحة.", icon: ShieldCheck },
-  { title: "حلول تناسب نشاطك", text: "نفهم طبيعة عملك قبل أن نقترح الخطوة التالية.", icon: Target },
-  { title: "وضوح وشفافية", text: "نشرح الأمور المالية والضريبية بطريقة بسيطة ومباشرة.", icon: Sparkles },
-  { title: "اهتمام بالتفاصيل", text: "نراجع التفاصيل بعناية لتقليل الأخطاء والملاحظات المحتملة.", icon: CheckCircle2 },
+  { title: "شهادات الدخل", text: "إعداد شهادات دخل واضحة للاستخدامات الرسمية والمصرفية حسب احتياجك.", icon: FileCheck2 },
+  { title: "تأسيس الشركات", text: "مساعدة أصحاب الأعمال في خطوات التأسيس والملفات المرتبطة بالنشاط.", icon: ClipboardCheck },
+  { title: "المحاسب القانوني", text: "خدمات محاسبية ومراجعة تساعدك على تنظيم أعمالك وفهم أرقامك.", icon: ShieldCheck },
+  { title: "الاستشارات الضريبية", text: "شرح الالتزامات والخيارات الضريبية بلغة واضحة تناسب طبيعة نشاطك.", icon: Calculator },
+  { title: "الفحوصات الضريبية", text: "مراجعة البيانات والملفات الضريبية وتجهيز الملاحظات المحتملة.", icon: SearchCheck },
+  { title: "الإقرارات الضريبية", text: "إعداد ومراجعة إقرارات الدخل والقيمة المضافة بدقة واهتمام.", icon: CheckCircle2 },
+  { title: "التحليل المالي", text: "تقارير تساعدك على تقييم الأداء ودعم القرارات الإدارية.", icon: LineChart },
+  { title: "السياسات والإجراءات", text: "تنظيم السياسات المالية والمحاسبية بما يلائم طريقة عملك.", icon: BarChart3 },
 ];
 
 const steps = [
-  { number: "01", title: "نفهم احتياجك", text: "نتعرف على نشاطك والتحدي الذي تحتاج إلى التعامل معه." },
-  { number: "02", title: "نحلل وضعك", text: "نراجع التفاصيل والمعلومات المتعلقة بطلبك بعناية." },
-  { number: "03", title: "نقدم الحل المناسب", text: "نقترح خطوات عملية تناسب احتياجاتك وأولوياتك." },
-  { number: "04", title: "نتابع معك", text: "نستمر في المتابعة والدعم عند الحاجة وبالقدر المناسب." },
+  { number: "01", title: "نفهم احتياجك", text: "نبدأ من نشاطك والسؤال الذي تريد إجابة واضحة عنه." },
+  { number: "02", title: "نراجع التفاصيل", text: "نرتب المعلومات والمستندات ونحدد الأولويات." },
+  { number: "03", title: "نقترح الحل", text: "نقدم خطوات عملية مناسبة لطبيعة عملك." },
+  { number: "04", title: "نتابع معك", text: "نظل قريبين عند الحاجة وفي كل مرحلة مهمة." },
 ];
 
 export function Hero() {
-  return (
-    <section className="hero-section">
-      <div className="hero-orbit hero-orbit-one" />
-      <div className="hero-orbit hero-orbit-two" />
-      <div className="container hero-grid">
-        <div className="hero-copy reveal reveal-delay-one">
-          <div className="eyebrow eyebrow-light"><span className="eyebrow-dot" /> حلول ضريبية ومحاسبية بثقة</div>
-          <h1>شريكك في<br /><em>الحلول الضريبية</em><br />والمحاسبية.</h1>
-          <p className="hero-lead">نساعدك على إدارة التزاماتك الضريبية والمحاسبية بثقة ووضوح، ونقدم لك حلولًا عملية تناسب احتياجات نشاطك.</p>
-          <div className="hero-actions">
-            <Link className="button button-gold" href="/contact">تواصل معنا <ArrowLeft size={17} /></Link>
-            <Link className="text-link text-link-light" href="/about">تعرف علينا <ArrowUpLeft size={16} /></Link>
-          </div>
-          <div className="hero-note"><span className="hero-note-line" /> نعتني بالتفاصيل، لتتفرغ لعملك</div>
-        </div>
-
-        <div className="hero-art reveal reveal-delay-two" aria-label="تصميم تجريدي يمثل وضوح البيانات المالية">
-          <div className="hero-art-grid" />
-          <div className="hero-art-ring hero-art-ring-one" />
-          <div className="hero-art-ring hero-art-ring-two" />
-          <div className="hero-chart-card">
-            <div className="chart-card-head"><span>وضوح أكبر</span><LineChart size={17} /></div>
-            <div className="chart-bars" aria-hidden="true"><i style={{ height: "34%" }} /><i style={{ height: "48%" }} /><i style={{ height: "42%" }} /><i style={{ height: "67%" }} /><i style={{ height: "61%" }} /><i className="chart-bar-active" style={{ height: "86%" }} /></div>
-            <div className="chart-card-foot"><span>قرارات مبنية على فهم</span><b>+ وضوح</b></div>
-          </div>
-          <div className="hero-seal"><ShieldCheck size={19} /><span>ثقة<br /><small>تُبنى</small></span></div>
-          <div className="hero-art-caption">RIZK<br /><span>TAX</span></div>
-        </div>
-      </div>
-      <div className="hero-bottom-line container"><span>01</span><i /><span>رزق تاكس</span></div>
-    </section>
-  );
+  return <section className="reference-hero"><div className="reference-hero-shape" /><div className="container reference-hero-inner"><div className="reference-hero-copy"><span className="eyebrow">رزق تاكس للمحاسبة والضرائب</span><h1>خبراء في المحاسبة<br />والاستشارات الضريبية</h1><p>نقدم خدمات محاسبية وضريبية متكاملة تساعد أصحاب الأعمال والمنشآت على إدارة التزاماتهم بثقة ووضوح.</p><div className="hero-actions"><Link className="button button-blue" href="/contact">تواصل معنا <ArrowLeft size={17} /></Link><a className="text-link" href="#services">خدماتنا <ArrowUpLeft size={16} /></a></div></div><div className="reference-logo-panel"><img src="/manus-storage/rizk-tax-logo_3f4c5cf1.png" alt="شعار رزق تاكس - محاسبون قانونيون وخبراء ضرائب" /><span>حلول عملية تبدأ من فهم احتياجك</span></div></div></section>;
 }
 
 export function TrustStrip() {
-  return (
-    <section className="trust-strip">
-      <div className="container trust-grid">
-        <div className="trust-intro"><span className="eyebrow">لماذا نبدأ من هنا؟</span><p>لأن التعامل مع التفاصيل المالية يبدأ بالوضوح.</p></div>
-        <div className="trust-item"><span className="trust-icon"><ShieldCheck size={20} /></span><div><strong>خبرة مهنية</strong><small>منهجية واضحة في كل خطوة</small></div></div>
-        <div className="trust-item"><span className="trust-icon"><Target size={20} /></span><div><strong>حلول متكاملة</strong><small>خدمات مترابطة تناسب نشاطك</small></div></div>
-        <div className="trust-item"><span className="trust-icon"><Headphones size={20} /></span><div><strong>متابعة مستمرة</strong><small>نظل قريبين عند الحاجة</small></div></div>
-      </div>
-    </section>
-  );
+  return <section className="reference-trust"><div className="container reference-trust-grid"><div><span className="eyebrow">لماذا رزق تاكس؟</span><p>دقة مهنية واهتمام حقيقي بتفاصيل أعمالك.</p></div><div><ShieldCheck size={24} /><strong>ثقة ووضوح</strong><small>تواصل مباشر وخطوات مفهومة</small></div><div><Target size={24} /><strong>حلول مناسبة</strong><small>خدمات مصممة حول احتياجك</small></div><div><Headphones size={24} /><strong>متابعة مستمرة</strong><small>نظل قريبين عند الحاجة</small></div></div></section>;
 }
 
 export function Services() {
-  return (
-    <section className="section section-services" id="services">
-      <div className="container">
-        <div className="section-heading section-heading-row">
-          <div><span className="eyebrow">ما نقدمه لك</span><h2>خدماتنا</h2></div>
-          <p>حلول ضريبية ومحاسبية تساعدك على إدارة أعمالك بثقة، من التفاصيل اليومية إلى القرارات المهمة.</p>
-        </div>
-        <div className="services-grid">
-          {services.map(({ title, text, icon: Icon, number }) => (
-            <article className="service-card" key={title}>
-              <div className="service-top"><span className="service-number">{number}</span><span className="service-icon"><Icon size={22} /></span></div>
-              <h3>{title}</h3><p>{text}</p><span className="service-arrow"><ArrowUpLeft size={17} /></span>
-            </article>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
+  return <section className="section reference-services" id="services"><div className="container"><div className="section-heading reference-heading"><span className="eyebrow">ما نقدمه لك</span><h2>خدماتنا المحاسبية والضريبية</h2><p>نقدم خدمات محاسبية متكاملة تشمل الاستشارات الضريبية والمراجعة والتحليل المالي لمساعدتك على إدارة عملك بشكل أفضل.</p></div><div className="reference-services-grid">{services.map(({ title, text, icon: Icon }, index) => <article className="reference-service-card" key={title}><span className="reference-service-index">0{index + 1}</span><span className="reference-service-icon"><Icon size={25} /></span><h3>{title}</h3><p>{text}</p><a href="#contact" aria-label={`اعرف المزيد عن ${title}`}><ArrowLeft size={17} /></a></article>)}</div></div></section>;
 }
 
 export function WhyUs() {
-  return (
-    <section className="section why-section">
-      <div className="container why-grid">
-        <div className="why-visual">
-          <div className="why-visual-top"><span>R</span><small>منهجية رزق تاكس</small></div>
-          <div className="why-visual-line" />
-          <div className="why-visual-statement">أرقامك<br /><em>تستحق</em><br />وضوحًا.</div>
-          <div className="why-visual-bottom"><span>01—04</span><span>RIZK TAX / EGYPT</span></div>
-        </div>
-        <div className="why-copy">
-          <span className="eyebrow eyebrow-light">الفرق في التفاصيل</span>
-          <h2>لماذا<br /><em>رزق تاكس؟</em></h2>
-          <p className="why-lead">نؤمن أن الحل الجيد يبدأ من فهم حقيقي لنشاطك، وينتهي بخطوة واضحة يمكنك اتخاذها بثقة.</p>
-          <div className="benefits-list">
-            {benefits.map(({ title, text, icon: Icon }) => <div className="benefit-item" key={title}><span><Icon size={18} /></span><div><strong>{title}</strong><p>{text}</p></div></div>)}
-          </div>
-        </div>
-      </div>
-    </section>
-  );
+  return <section className="section reference-about"><div className="container reference-about-grid"><div className="reference-about-visual"><div className="reference-about-orbit" /><span>RIZK<br /><b>TAX</b></span></div><div className="reference-about-copy"><span className="eyebrow">نبذة عن المكتب</span><h2>رزق تاكس للمحاسبة والاستشارات <em>المحاسبية والضريبية</em></h2><p>نلتزم بتقديم حلول دقيقة وموثوقة تخدم الأفراد ورواد الأعمال والشركات، من خلال فهم عملي للأنظمة المحاسبية والضريبية واحتياجات كل نشاط.</p><p>هدفنا أن نجعل التفاصيل المالية أكثر وضوحًا، وأن نساعدك على اتخاذ قرارات أفضل دون تعقيد أو مبالغة.</p><Link className="text-link" href="/about">اعرف المزيد عنا <ArrowLeft size={17} /></Link></div></div></section>;
 }
 
-export function AboutPreview() {
-  return (
-    <section className="section about-preview-section">
-      <div className="container about-preview-grid">
-        <div className="section-heading"><span className="eyebrow">عن رزق تاكس</span><h2>نساعدك على التركيز في عملك، <em>ونعتني بالتفاصيل الضريبية.</em></h2></div>
-        <div className="about-preview-copy"><p>رزق تاكس شريكك في فهم وإدارة احتياجاتك الضريبية والمحاسبية. نعمل على تبسيط التفاصيل، وتنظيم المعلومات، ومساعدتك على رؤية الصورة الأوضح لنشاطك.</p><Link className="text-link" href="/about">اعرف المزيد عنا <ArrowLeft size={17} /></Link></div>
-      </div>
-    </section>
-  );
-}
+export function AboutPreview() { return null; }
 
 export function Process() {
-  return (
-    <section className="section process-section">
-      <div className="container">
-        <div className="section-heading section-heading-row"><div><span className="eyebrow">كيف نعمل</span><h2>خطوات بسيطة، <em>نتيجة أوضح.</em></h2></div><p>نضع التواصل والفهم والمتابعة في قلب كل تجربة معك.</p></div>
-        <div className="process-grid">{steps.map((step, index) => <div className="process-item" key={step.number}><span className="process-number">{step.number}</span><div className="process-connector">{index < steps.length - 1 && <i />}</div><h3>{step.title}</h3><p>{step.text}</p></div>)}</div>
-      </div>
-    </section>
-  );
+  return <section className="section reference-process"><div className="container"><div className="section-heading reference-heading"><span className="eyebrow">كيف نعمل معك</span><h2>خطوات واضحة من البداية</h2></div><div className="reference-process-grid">{steps.map((step) => <div key={step.number}><span>{step.number}</span><h3>{step.title}</h3><p>{step.text}</p></div>)}</div></div></section>;
 }
 
 export function FinalCta() {
-  const whatsapp = company.whatsapp.replace(/[^\d]/g, "");
-  return (
-    <section className="cta-section">
-      <div className="cta-pattern" />
-      <div className="container cta-inner">
-        <div><span className="eyebrow eyebrow-light">نحن هنا لمساعدتك</span><h2>هل لديك <em>استفسار ضريبي؟</em></h2><p>تحدث معنا ودعنا نساعدك في فهم احتياجاتك والوصول إلى الحل المناسب.</p></div>
-        <div className="cta-actions"><Link className="button button-gold" href="/contact">تواصل معنا <ArrowLeft size={17} /></Link>{whatsapp && <a className="button button-ghost-light" href={`https://wa.me/${whatsapp}`} target="_blank" rel="noreferrer"><MessageCircle size={17} /> واتساب</a>}</div>
-      </div>
-    </section>
-  );
+  const number = company.whatsapp.replace(/[^\d]/g, "");
+  return <section className="reference-cta" id="contact"><div className="container reference-cta-inner"><div><span className="eyebrow">تواصل معنا</span><h2>هل لديك استفسار ضريبي؟</h2><p>لا تتردد في التواصل معنا، فقط املأ النموذج وسنساعدك في معرفة الحل المناسب.</p></div><div className="cta-actions"><Link className="button button-blue" href="/contact">أرسل استفسارك <ArrowLeft size={17} /></Link>{number && <a className="button button-outline-blue" href={`https://wa.me/${number}`} target="_blank" rel="noreferrer"><MessageCircle size={17} /> واتساب</a>}</div></div></section>;
 }

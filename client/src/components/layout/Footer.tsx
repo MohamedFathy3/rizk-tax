@@ -16,15 +16,7 @@ export default function Footer() {
       <div className="container footer-main">
         <div className="footer-brand-column">
           <Link href="/" className="brand footer-brand">
-            <span className="brand-mark" aria-hidden="true">
-              <span className="brand-mark-bar brand-mark-bar-one" />
-              <span className="brand-mark-bar brand-mark-bar-two" />
-              <span className="brand-mark-bar brand-mark-bar-three" />
-            </span>
-            <span className="brand-copy">
-              <strong>{company.nameAr}</strong>
-              <small>RIZK TAX</small>
-            </span>
+            <img className="footer-logo" src="/manus-storage/rizk-tax-logo_3f4c5cf1.png" alt="شعار رزق تاكس" />
           </Link>
           <p>{company.description}</p>
           <div className="footer-socials">
