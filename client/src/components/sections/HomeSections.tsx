@@ -3,15 +3,15 @@ import { Link } from "wouter";
 import { company } from "@/config/company";
 
 const services = [
-  { title: "شهادات الدخل", text: "إصدار شهادات دخل واضحة للاستخدامات الرسمية والمصرفية.", image: "/manus-storage/calculator_154aca8e.jpg", icon: FileCheck2 },
-  { title: "تأسيس الشركات", text: "مساعدة أصحاب الأعمال في خطوات التأسيس والملفات المرتبطة بالنشاط.", image: "/manus-storage/service-meeting_279d87d0.jpg", icon: ClipboardCheck },
-  { title: "محاسب قانوني معتمد", text: "خدمات محاسبية ومراجعة تساعدك على تنظيم أعمالك وفهم أرقامك.", image: "/manus-storage/accountant_1fac540b.jpg", icon: ShieldCheck },
-  { title: "استشارات ضريبية", text: "شرح الالتزامات والخيارات الضريبية بما يناسب طبيعة نشاطك.", image: "/manus-storage/documents_08c2d3a9.jpg", icon: SearchCheck },
-  { title: "فحوصات ضريبية", text: "مراجعة البيانات والملفات الضريبية وتجهيز الملاحظات المحتملة.", image: "/manus-storage/dark-paperwork_355ef6fd.jpg", icon: SearchCheck },
-  { title: "اعتماد الإقرارات الضريبية", text: "إعداد ومراجعة إقرارات الدخل والقيمة المضافة بدقة واهتمام.", image: "/manus-storage/desk_b01e2a13.jpg", icon: CheckCircle2 },
-  { title: "التحليل المالي وتقييم الأداء", text: "تقارير تساعدك على تقييم الأداء ودعم القرارات الإدارية.", image: "/manus-storage/service-client_5b52c83d.jpg", icon: LineChart },
-  { title: "إعداد السياسات والإجراءات", text: "تنظيم السياسات المالية والمحاسبية بما يلائم طريقة عملك.", image: "/manus-storage/calculator_154aca8e.jpg", icon: ClipboardCheck },
-  { title: "مراجعة الحسابات والقوائم المالية", text: "مراجعة منظمة تساعد على رفع مستوى الشفافية والالتزام.", image: "/manus-storage/accountant_1fac540b.jpg", icon: ShieldCheck },
+  { title: "شهادات الدخل", text: "إصدار شهادات دخل واضحة للاستخدامات الرسمية والمصرفية.", image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=900&q=80", icon: FileCheck2 },
+  { title: "تأسيس الشركات", text: "مساعدة أصحاب الأعمال في خطوات التأسيس والملفات المرتبطة بالنشاط.", image: "https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=900&q=80", icon: ClipboardCheck },
+  { title: "محاسب قانوني معتمد", text: "خدمات محاسبية ومراجعة تساعدك على تنظيم أعمالك وفهم أرقامك.", image: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=900&q=80", icon: ShieldCheck },
+  { title: "استشارات ضريبية", text: "شرح الالتزامات والخيارات الضريبية بما يناسب طبيعة نشاطك.", image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=900&q=80", icon: SearchCheck },
+  { title: "فحوصات ضريبية", text: "مراجعة البيانات والملفات الضريبية وتجهيز الملاحظات المحتملة.", image: "https://images.unsplash.com/photo-1554224154-22dec7ec8818?auto=format&fit=crop&w=900&q=80", icon: SearchCheck },
+  { title: "اعتماد الإقرارات الضريبية", text: "إعداد ومراجعة إقرارات الدخل والقيمة المضافة بدقة واهتمام.", image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=900&q=80", icon: CheckCircle2 },
+  { title: "التحليل المالي وتقييم الأداء", text: "تقارير تساعدك على تقييم الأداء ودعم القرارات الإدارية.", image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=900&q=80", icon: LineChart },
+  { title: "إعداد السياسات والإجراءات", text: "تنظيم السياسات المالية والمحاسبية بما يلائم طريقة عملك.", image: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=900&q=80", icon: ClipboardCheck },
+  { title: "مراجعة الحسابات والقوائم المالية", text: "مراجعة منظمة تساعد على رفع مستوى الشفافية والالتزام.", image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=900&q=80", icon: ShieldCheck },
 ];
 
 const testimonials = [
@@ -21,13 +21,13 @@ const testimonials = [
 ];
 
 export function Hero() {
-  return <section className="reference-photo-hero"><img className="reference-hero-photo" src="/manus-storage/hero_1f95f595.jpg" alt="مكتب وأوراق محاسبية" /><div className="reference-hero-overlay" /><div className="container reference-photo-inner"><span className="reference-mini-logo">R<span>▲</span></span><h1>رزق تاكس<br />للمحاسبة والاستشارات الضريبية</h1><p>نقدم خدمات محاسبية وضريبية متكاملة تساعد أصحاب الأعمال والمنشآت على إدارة التزاماتهم بثقة ووضوح.</p><Link className="reference-pill-button" href="/contact">احجز استشارتك مجانًا <ArrowLeft size={14} /></Link><div className="reference-scroll">اكتشف خدماتنا <span>↓</span></div></div></section>;
+  return <section className="reference-photo-hero"><img className="reference-hero-photo" src="/slider.jpeg" alt="شعار رزق تاكس للمحاسبة والاستشارات الضريبية" /><div className="reference-hero-overlay" /><div className="container reference-photo-inner"><h1>رزق تاكس<br />للمحاسبة والاستشارات الضريبية</h1><p>نقدم خدمات محاسبية وضريبية متكاملة تساعد أصحاب الأعمال والمنشآت على إدارة التزاماتهم بثقة ووضوح.</p><Link className="reference-pill-button" href="/contact">احجز استشارتك مجانًا <ArrowLeft size={14} /></Link><div className="reference-scroll">اكتشف خدماتنا <span>↓</span></div></div></section>;
 }
 
 export function TrustStrip() { return <div className="reference-spacer-strip" />; }
 
 export function Services() {
-  return <section className="reference-photo-services" id="services"><div className="container"><div className="reference-photo-heading"><span className="eyebrow">ما نقدمه لك</span><h2>خدماتنا المحاسبية</h2><p>نقدم خدمات محاسبية وضريبية متكاملة تشمل الاستشارات والمراجعة والتحليل المالي لمساعدتك على النجاح.</p></div><div className="photo-services-grid">{services.map(({ title, text, image, icon: Icon }, index) => <article className="photo-service-card" key={title}><div className="photo-service-image"><img src={image} alt="" /><span><Icon size={15} /></span></div><div className="photo-service-copy"><span className="photo-service-number">0{index + 1}</span><h3>{title}</h3><p>{text}</p></div></article>)}</div></div></section>;
+  return <section className="reference-photo-services" id="services"><div className="container"><div className="reference-photo-heading"><span className="eyebrow">ما نقدمه لك</span><h2>خدماتنا المحاسبية</h2><p>نقدم خدمات محاسبية وضريبية متكاملة تشمل الاستشارات والمراجعة والتحليل المالي لمساعدتك على النجاح.</p></div><div className="photo-services-grid">{services.map(({ title, text, image, icon: Icon }, index) => <article className="photo-service-card" key={title}><div className="photo-service-image"><img src={image} alt={title} onError={(event) => { event.currentTarget.onerror = null; event.currentTarget.src = "/slider.jpeg"; }} /><span><Icon size={15} /></span></div><div className="photo-service-copy"><span className="photo-service-number">0{index + 1}</span><h3>{title}</h3><p>{text}</p></div></article>)}</div></div></section>;
 }
 
 export function WhyUs() {

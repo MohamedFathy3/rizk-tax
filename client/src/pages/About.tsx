@@ -25,7 +25,7 @@ export default function About() {
         <section className="section about-story-section">
           <div className="container about-story-grid">
             <div className="about-story-label"><span className="eyebrow">منهجنا</span><strong>وضوح<br /><em>يبني</em><br />ثقة.</strong></div>
-            <div className="about-story-copy"><h2>نحن نؤمن أن التفاصيل المالية لا يجب أن تكون معقدة.</h2><p>رزق تاكس مساحة مهنية تساعد أصحاب الأعمال والمنشآت على التعامل مع احتياجاتهم الضريبية والمحاسبية بطريقة أكثر فهمًا وتنظيمًا. نستمع أولًا، نحلل ما أمامنا، ثم نضع الخطوة العملية التي تناسبك.</p><p>لا نَعِدك بحلول عامة؛ نركز على تقديم إجابات واضحة، ومتابعة قريبة، وتواصل يجعل الأمور المهمة أسهل في إدارتها.</p><Link className="text-link" href="/contact">ابدأ محادثة <ArrowLeft size={17} /></Link></div>
+            <div className="about-story-copy"><h2>مكتب رزق للاستشارات الضريبية والمحاسبية</h2><p>نقدم خدمات محاسبية وضريبية متكاملة باحترافية عالية وفق أحدث القوانين والتعديلات الضريبية.</p><p>لا نَعِدك بحلول عامة؛ نركز على تقديم إجابات واضحة، ومتابعة قريبة، وتواصل يجعل الأمور المهمة أسهل في إدارتها.</p><Link className="text-link" href="/contact">ابدأ محادثة <ArrowLeft size={17} /></Link></div>
           </div>
         </section>
 

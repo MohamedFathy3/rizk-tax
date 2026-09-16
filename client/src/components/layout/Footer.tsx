@@ -16,7 +16,7 @@ export default function Footer() {
       <div className="container footer-main">
         <div className="footer-brand-column">
           <Link href="/" className="brand footer-brand">
-            <img className="footer-logo" src="/manus-storage/rizk-tax-logo_3f4c5cf1.png" alt="شعار رزق تاكس" />
+            <img className="footer-logo" src="/slider.jpeg" alt="شعار رزق تاكس" />
           </Link>
           <p>{company.description}</p>
           <div className="footer-socials">

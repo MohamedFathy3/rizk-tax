@@ -4,7 +4,7 @@ export const company = {
   phone: "01011200087 / 01223555836",
   whatsapp: "01011200087",
   email: "M.Sa3ed.Rizk@gmail.com",
-  address: "4 ابن خلدون سكوير - العجوزة - الجيزة",
+  address: "4 ميدان ابن خلدون - المهندسين - الجيزة",
   facebook: "",
   instagram: "",
   linkedin: "",
