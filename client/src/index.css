@@ -210,3 +210,29 @@ button, a { -webkit-tap-highlight-color: transparent; }
 @keyframes hero-copy-in { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
 @keyframes hero-image-drift { from { transform: scale(1.03); } to { transform: scale(1.1); } }
 @keyframes scroll-bounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(6px); } }
+
+@media (max-width: 560px) {
+  body { overflow-x: hidden; }
+  .container { width: min(calc(100% - 28px), 480px); }
+  .nav-inner { height: 68px; gap: 8px; }
+  .header-logo { width: 84px; height: 50px; }
+  .nav-socials { gap: 6px; margin-right: auto; }
+  .nav-socials a { width: 27px; height: 27px; }
+  .menu-button { margin-right: 0; padding: 6px; }
+  .reference-photo-hero { min-height: 590px; padding: 100px 0 42px; }
+  .reference-photo-inner { padding-top: 0; }
+  .reference-photo-inner h1 { max-width: 100%; margin-bottom: 17px; font-size: 31px; line-height: 1.28; letter-spacing: -.035em; }
+  .reference-photo-inner p { max-width: 310px; margin-bottom: 22px; font-size: 13px; line-height: 1.9; }
+  .reference-pill-button { max-width: 100%; padding: 11px 17px; font-size: 12px; }
+  .reference-scroll { margin-top: 43px; }
+  .reference-photo-services { padding: 54px 0 68px; }
+  .reference-photo-heading { margin-bottom: 31px; }
+  .reference-photo-heading h2 { font-size: 31px; line-height: 1.3; }
+  .reference-photo-heading p { padding: 0 6px; font-size: 12px; line-height: 1.9; }
+  .photo-services-grid { grid-template-columns: 1fr; gap: 46px; }
+  .photo-service-image { height: 190px; border-radius: 14px; }
+  .photo-service-copy { padding: 18px 4px 0; }
+  .photo-service-copy h3 { font-size: 17px; line-height: 1.5; }
+  .photo-service-copy p { font-size: 12px; line-height: 1.85; }
+  .photo-service-number { display: none; }
+}
