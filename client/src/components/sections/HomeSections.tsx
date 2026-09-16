@@ -21,7 +21,7 @@ const testimonials = [
 ];
 
 export function Hero() {
-  return <section className="reference-photo-hero"><img className="reference-hero-photo" src="/slider.jpeg" alt="شعار رزق تاكس للمحاسبة والاستشارات الضريبية" /><div className="reference-hero-overlay" /><div className="container reference-photo-inner"><h1>رزق تاكس<br />للمحاسبة والاستشارات الضريبية</h1><p>نقدم خدمات محاسبية وضريبية متكاملة تساعد أصحاب الأعمال والمنشآت على إدارة التزاماتهم بثقة ووضوح.</p><Link className="reference-pill-button" href="/contact">احجز استشارتك مجانًا <ArrowLeft size={14} /></Link><div className="reference-scroll">اكتشف خدماتنا <span>↓</span></div></div></section>;
+  return <section className="reference-photo-hero"><img className="reference-hero-photo" src="/slider.jpeg" alt="Rizk Tax for accounting and tax consulting" /><div className="reference-hero-overlay" /><div className="container reference-photo-inner"><h1>Rizk Tax<br />Accounting &amp; Tax Consulting</h1><p>نقدم خدمات محاسبية وضريبية متكاملة تساعد أصحاب الأعمال والمنشآت على إدارة التزاماتهم بثقة ووضوح.</p><Link className="reference-pill-button" href="/contact">احجز استشارتك مجانًا <ArrowLeft size={14} /></Link><div className="reference-scroll">اكتشف خدماتنا <span>↓</span></div></div></section>;
 }
 
 export function TrustStrip() { return <div className="reference-spacer-strip" />; }
