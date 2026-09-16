@@ -238,4 +238,7 @@ export default defineConfig({
       deny: ["**/.*"],
     },
   },
+  preview: {
+    allowedHosts: ["rizk.tax", ".rizk.tax"],
+  },
 });
