@@ -41,7 +41,7 @@ export default function Navbar() {
     <header className={`site-header ${scrolled ? "site-header-scrolled" : ""}`}>
       <div className="container nav-inner">
         <Link href="/" className="brand" aria-label={`${company.nameAr} - الرئيسية`}>
-          <img className="header-logo" src="/slider.jpeg" alt="شعار رزق تاكس" />
+          <img className="header-logo" src="/logo.png" alt="شعار رزق تاكس" />
         </Link>
 
         <nav className="desktop-nav" aria-label="التنقل الرئيسي">
