@@ -1,4 +1,4 @@
-import { Menu, X } from "lucide-react";
+import { Facebook, Menu, MessageCircle, X } from "lucide-react";
 import { useEffect, useState } from "react";
 import { Link, useLocation } from "wouter";
 import { company, navigation } from "@/config/company";
@@ -62,6 +62,11 @@ export default function Navbar() {
           <span>احجز استشارتك</span>
           <span className="nav-cta-arrow">←</span>
         </Link>
+
+        <div className="nav-socials" aria-label="وسائل التواصل الاجتماعي">
+          {company.facebook && <a href={company.facebook} target="_blank" rel="noreferrer" aria-label="فيسبوك"><Facebook size={16} /></a>}
+          {company.whatsapp && <a href={`https://wa.me/${company.whatsapp.replace(/[^\d]/g, "")}`} target="_blank" rel="noreferrer" aria-label="واتساب"><MessageCircle size={16} /></a>}
+        </div>
 
         <button
           className="menu-button"

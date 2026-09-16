@@ -196,6 +196,17 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .contact-bottom-note { background: var(--reference-blue-soft); }
 .header-logo { width: 112px; height: 62px; mix-blend-mode: normal; }
 .footer-logo { width: 170px; height: 96px; padding: 8px 12px; border-radius: 6px; mix-blend-mode: normal; background: white; }
+.nav-socials { display: flex; align-items: center; gap: 9px; margin-right: 4px; }
+.nav-socials a { display: grid; place-items: center; width: 29px; height: 29px; color: var(--reference-blue-dark); border: 1px solid rgba(40, 125, 168, .2); border-radius: 50%; transition: color .2s ease, background .2s ease, transform .2s ease; }
+.nav-socials a:hover { color: white; background: var(--reference-blue); transform: translateY(-2px); }
+.photo-services-grid { gap: 72px 30px; }
+.photo-service-card, .photo-service-card:hover { background: transparent; border-radius: 0; box-shadow: none; transform: none; }
+.photo-service-image { height: 205px; border-radius: 16px; }
+.photo-service-image::after { background: linear-gradient(180deg, transparent 55%, rgba(12, 65, 92, .18)); }
+.photo-service-copy { min-height: 0; padding: 24px 8px 0; text-align: center; }
+.photo-service-copy h3 { margin: 0 0 10px; color: var(--reference-blue-dark); font-size: 18px; font-weight: 700; }
+.photo-service-copy p { color: #687d88; font-size: 13px; line-height: 1.95; }
+.photo-service-number { top: auto; left: 8px; bottom: auto; color: rgba(40, 125, 168, .5); }
 @keyframes hero-copy-in { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
 @keyframes hero-image-drift { from { transform: scale(1.03); } to { transform: scale(1.1); } }
 @keyframes scroll-bounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(6px); } }
