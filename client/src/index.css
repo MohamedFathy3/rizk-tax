@@ -255,3 +255,10 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .photo-about-badge { overflow: hidden; border: 0; box-shadow: 0 0 0 2px #a8dce9; background: #fff; }
 .photo-about-badge::before { display: none; }
 .photo-about-badge img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center; }
+
+
+/* Keep the provided logo's original portrait proportions inside the about section. */
+.photo-about-badge { width: min(100%, 360px); aspect-ratio: auto; overflow: visible; border: 0; border-radius: 0; box-shadow: none; background: transparent; }
+.photo-about-badge img { width: 100%; height: auto; object-fit: contain; object-position: center; border-radius: 0; }
+@media (max-width: 900px) { .photo-about-badge { width: min(100%, 320px); } }
+@media (max-width: 560px) { .photo-about-badge { width: 275px; } }
