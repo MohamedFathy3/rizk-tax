@@ -104,8 +104,8 @@ button, a { -webkit-tap-highlight-color: transparent; }
 
 /* Reference-inspired visual direction: light, centered, logo-led */
 .header-logo { width: 86px; height: 62px; object-fit: contain; object-position: center; mix-blend-mode: normal; background: transparent; }
-.site-header { color: var(--navy-900); background: rgba(255,255,255,.96); border-bottom: 1px solid rgba(12,44,116,.08); }
-.site-header-scrolled { background: rgba(255,255,255,.97); border-bottom-color: rgba(12,44,116,.12); box-shadow: 0 8px 25px rgba(12,44,116,.08); }
+.site-header { color: var(--navy-900); background: rgba(255,255,255,.78); border-bottom: 1px solid rgba(12,44,116,.1); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); }
+.site-header-scrolled { background: rgba(255,255,255,.94); border-bottom-color: rgba(12,44,116,.14); box-shadow: 0 8px 25px rgba(12,44,116,.1); }
 .desktop-nav { color: #30446e; }.desktop-nav a:hover, .desktop-nav a.active { color: #231a91; }.desktop-nav a::after { background: #231a91; }.nav-cta { color: #231a91; border-color: rgba(35,26,145,.32); }.nav-cta:hover { background: #231a91; color: #fff; }.menu-button { color: #231a91; }
 .mobile-nav { background: #fff; border-top-color: rgba(35,26,145,.1); }.mobile-nav a { color: #24365d; border-bottom-color: rgba(35,26,145,.1); }.mobile-nav-cta { color: #fff !important; background: #231a91; }
 .reference-hero { position: relative; min-height: 650px; padding: 170px 0 88px; overflow: hidden; background: #fbfcff; color: #152348; }

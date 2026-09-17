@@ -12,6 +12,7 @@ const services = [
   { title: "التحليل المالي وتقييم الأداء", text: "تقارير تساعدك على تقييم الأداء ودعم القرارات الإدارية.", image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=900&q=80", icon: LineChart },
   { title: "إعداد السياسات والإجراءات", text: "تنظيم السياسات المالية والمحاسبية بما يلائم طريقة عملك.", image: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=900&q=80", icon: ClipboardCheck },
   { title: "مراجعة الحسابات والقوائم المالية", text: "مراجعة منظمة تساعد على رفع مستوى الشفافية والالتزام.", image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=900&q=80", icon: ShieldCheck },
+  { title: "نظام ERP مدعوم بالذكاء الاصطناعي", text: "نساعدك على اختيار وتطبيق نظام ERP يربط الحسابات والمخزون والمبيعات، مع أدوات ذكاء اصطناعي لتحليل البيانات وأتمتة التقارير ودعم قراراتك.", image: "https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=900&q=80", icon: LineChart },
 ];
 
 const testimonials = [
@@ -27,7 +28,7 @@ export function Hero() {
 export function TrustStrip() { return <div className="reference-spacer-strip" />; }
 
 export function Services() {
-  return <section className="reference-photo-services" id="services"><div className="container"><div className="reference-photo-heading"><span className="eyebrow">ما نقدمه لك</span><h2>خدماتنا المحاسبية</h2><p>نقدم خدمات محاسبية وضريبية متكاملة تشمل الاستشارات والمراجعة والتحليل المالي لمساعدتك على النجاح.</p></div><div className="photo-services-grid">{services.map(({ title, text, image, icon: Icon }, index) => <article className="photo-service-card" key={title}><div className="photo-service-image"><img src={image} alt={title} onError={(event) => { event.currentTarget.onerror = null; event.currentTarget.src = "/slider.jpeg"; }} /><span><Icon size={15} /></span></div><div className="photo-service-copy"><span className="photo-service-number">0{index + 1}</span><h3>{title}</h3><p>{text}</p></div></article>)}</div></div></section>;
+  return <section className="reference-photo-services" id="services"><div className="container"><div className="reference-photo-heading"><span className="eyebrow">ما نقدمه لك</span><h2>خدماتنا المحاسبية والرقمية</h2><p>نقدم حلولًا محاسبية وضريبية ورقمية متكاملة؛ من تأسيس الأعمال والمراجعة إلى التحليل المالي، وتطبيق أنظمة ERP الذكية التي تساعدك على إدارة عملياتك واتخاذ قرارات أدق.</p></div><div className="photo-services-grid">{services.map(({ title, text, image, icon: Icon }, index) => <article className="photo-service-card" key={title}><div className="photo-service-image"><img src={image} alt={title} onError={(event) => { event.currentTarget.onerror = null; event.currentTarget.src = "/slider.jpeg"; }} /><span><Icon size={15} /></span></div><div className="photo-service-copy"><span className="photo-service-number">{String(index + 1).padStart(2, "0")}</span><h3>{title}</h3><p>{text}</p></div></article>)}</div></div></section>;
 }
 
 export function WhyUs() {
